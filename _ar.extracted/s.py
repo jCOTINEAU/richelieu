@@ -1,8 +1,11 @@
 f= open("pDetail","r")
 cont = f.read();
 cont = cont.replace("\n","")
-cont = cont.replace(" ","")
 cont = cont.replace(":","")
+cont = cont.replace(" ","")
+cont = cont.replace("\r","")
+cont = cont.replace(" ","")
+
 n = int(cont, 16)
 print(n)
 print("------\n")
@@ -12,6 +15,12 @@ outN.write(str(n))
 
 pF = open("prime.txt","r")
 pFc = pF.read()
+pFc = pFc.replace("\n","")
+pFc = pFc.replace(" ","")
+
+pFc = pFc.replace(":","")
+pFc = pFc.replace("\r","")
+
 p= int (pFc,16)
 print(p)
 
