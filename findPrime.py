@@ -85,7 +85,7 @@ for p in cds:
     founds.append("cd,"+str(p))
 
 t = 0
-int rez = []
+rez = []
 size = len(founds)
 print("founds is of length"+str(size))
 
@@ -105,7 +105,7 @@ for i in range(0,size+1):
         print(t)
         if is_Prime(myI):
             print("succes")
-            rez.append[myI]
+            rez.append(myI)
     
 print (t)
 zboui = 0
